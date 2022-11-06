@@ -1,0 +1,89 @@
+.landing {
+  min-height: calc(93vh - (96px));
+  /* width: 1080px; */
+  /* display: flex;
+  align-items: center; */
+}
+
+.link {
+  fill: none;
+  stroke: blue;
+}
+
+.title {
+  font-size: 95px;
+}
+
+.subtitle {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landingbutton {
+  width: 200px;
+  height: 55px;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+  transform: rotate(0.25turn);
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
+  background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+#home:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.cover {
+  background: no-repeat center/cover;
+}
+
+.hero {
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero .container-fluid {
+  z-index: 10;
+}

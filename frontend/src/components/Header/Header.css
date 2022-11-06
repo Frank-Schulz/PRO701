@@ -1,0 +1,6 @@
+.dropdown-menu {
+  background-color: var(--bs-light);
+}
+.dropdown-menu a {
+  color: var(--bs-dark);
+}

@@ -1,0 +1,44 @@
+:root {
+  --links-color: #533d20;
+}
+
+.d3-tooltip {
+  position: absolute;
+  padding: 0 10px;
+  background: white;
+  opacity: 0;
+}
+
+.d3-label {
+  position: absolute;
+  padding: 0 10px;
+  background: white;
+  opacity: 100;
+}
+
+svg {
+  background-color: #f4e8d7;
+}
+
+.frame {
+  padding: 5px 5px;
+  background-color: #ffffff;
+  stroke-opacity: 1;
+  border-width: 3px;
+  outline: thin solid #5b5854;
+  border-radius: 5px;
+}
+
+.frame>p {
+  margin-bottom: 0;
+}
+
+.links {
+  stroke: var(--links-color);
+  fill: none;
+}
+
+.hasChildren {
+  fill: var(--links-color);
+  stroke-width: 10;
+}

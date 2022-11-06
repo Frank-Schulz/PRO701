@@ -1,0 +1,14 @@
+{
+  "name": "pro701",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix ./backend\" \"npm start --prefix ./frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Schulz",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
